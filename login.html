@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+    <header>
+        <h1 class="tt"><img src="https://cdn.pixabay.com/photo/2023/01/09/01/15/flash-7706360_640.png" alt="Flash logo" class="logo"> Flashman Food Service</h1>
+        <nav class="nav-links">
+            <a class="m" href="home.html">Home</a>
+            <a class="m" href="about.html">About</a>
+            <a class="m" href="menu.html">Menu</a>
+            <a class="m" href="contact.html">Contact</a>
+            <a class="m" href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <div class="login-container">
+        <h2 class="login-title">Login to Your Account</h2>
+
+        <form class="login-form" onsubmit="handleLogin(event)">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <p class="signup-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Copyright by Veera. All rights reserved.</p>
+    </footer>
+
+    <script src="java.js"></script>
+
+</body>
+</html>

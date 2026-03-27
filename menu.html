@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+    <header>
+        <h1 class="tt"><img src="https://cdn.pixabay.com/photo/2023/01/09/01/15/flash-7706360_640.png" alt="Flash logo" class="logo"> Flashman Food Service</h1>
+        <nav class="nav-links">
+            <a class="m" href="home.html">Home</a>
+            <a class="m" href="about.html">About</a>
+            <a class="m" href="menu.html">Menu</a>
+            <a class="m" href="contact.html">Contact</a>
+            <a class="m" href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <div class="menu-container">
+        <h2 class="menu-title">Our Menu</h2>
+
+        <div class="menu-section">
+            <h3>Appetizers</h3>
+            <ul>
+                <li>🥟 Samosa - ₹25 <button class="add-to-cart" onclick="addToCart('🥟 Samosa', 25)">Add to Cart</button></li>
+                <li>🥕 Bajji - ₹30 <button class="add-to-cart" onclick="addToCart('🥕 Bajji', 30)">Add to Cart</button></li>
+                <li>🍟 French Fries - ₹70 <button class="add-to-cart" onclick="addToCart('🍟 French Fries', 70)">Add to Cart</button></li>
+                <li>🍿 Popcorn - ₹50 <button class="add-to-cart" onclick="addToCart('🍿 Popcorn', 50)">Add to Cart</button></li>
+                <li>🍗🍿 Chicken Pop Corn - ₹150 <button class="add-to-cart" onclick="addToCart('🍗🍿 Chicken Pop Corn', 150)">Add to Cart</button></li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <h3>Main Course</h3>
+            <ul>
+                <li>🍚 Fried Rice - ₹120 <button class="add-to-cart" onclick="addToCart('🍚 Fried Rice', 120)">Add to Cart</button></li>
+                <li>🍚 Rice - ₹60 <button class="add-to-cart" onclick="addToCart('🍚 Rice', 60)">Add to Cart</button></li>
+                <li>🍗🍚 Chicken Fried Rice - ₹140 <button class="add-to-cart" onclick="addToCart('🍗🍚 Chicken Fried Rice', 140)">Add to Cart</button></li>
+                <li>🥪 Sandwich - ₹80 <button class="add-to-cart" onclick="addToCart('🥪 Sandwich', 80)">Add to Cart</button></li>
+                <li>🍗🥪 Chicken Sandwich - ₹100 <button class="add-to-cart" onclick="addToCart('🍗🥪 Chicken Sandwich', 100)">Add to Cart</button></li>
+                <li>🥜🥪 Nutty Sandwich - ₹90 <button class="add-to-cart" onclick="addToCart('🥜🥪 Nutty Sandwich', 90)">Add to Cart</button></li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <h3>Noodles</h3>
+            <ul>
+                <li>🍜 Noodles - ₹110 <button class="add-to-cart" onclick="addToCart('🍜 Noodles', 110)">Add to Cart</button></li>
+                <li>🥚🍜 Egg Noodles - ₹125 <button class="add-to-cart" onclick="addToCart('🥚🍜 Egg Noodles', 125)">Add to Cart</button></li>
+                <li>🍗🍜 Chicken Noodles - ₹135 <button class="add-to-cart" onclick="addToCart('🍗🍜 Chicken Noodles', 135)">Add to Cart</button></li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <h3>Burgers</h3>
+            <ul>
+                <li>🍔 Burger - ₹130 <button class="add-to-cart" onclick="addToCart('🍔 Burger', 130)">Add to Cart</button></li>
+                <li>🍗🍔 Chicken Burger - ₹160 <button class="add-to-cart" onclick="addToCart('🍗🍔 Chicken Burger', 160)">Add to Cart</button></li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <h3>Momos</h3>
+            <ul>
+                <li>🥟 Momos - ₹100 <button class="add-to-cart" onclick="addToCart('🥟 Momos', 100)">Add to Cart</button></li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <h3>Special Items</h3>
+            <ul>
+                <li>🌶️🍗 Chilli Chicken - ₹180 <button class="add-to-cart" onclick="addToCart('🌶️🍗 Chilli Chicken', 180)">Add to Cart</button></li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <h3>Beverages</h3>
+            <ul>
+                <li>🍹 Mocktails - ₹80 <button class="add-to-cart" onclick="addToCart('🍹 Mocktails', 80)">Add to Cart</button></li>
+                <li>🥤 Soft Drinks - ₹40 <button class="add-to-cart" onclick="addToCart('🥤 Soft Drinks', 40)">Add to Cart</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <h3>Shopping Cart</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: ₹<span id="total">0</span></p>
+        <button onclick="buy()">Buy Now</button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Copyright by Veera. All rights reserved.</p>
+    </footer>
+
+    <script src="java.js"></script>
+
+</body>
+</html>
